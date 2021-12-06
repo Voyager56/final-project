@@ -34,10 +34,11 @@ projectArray.forEach((project,index) => {
         project.style.backgroundColor = "#848484"
     }
     project.addEventListener(`click`, (e) => {
-       resetColors(projectArray)
-       project.style.backgroundColor = "black"
-       const invisible = project.getElementsByClassName(`invisible`)[0]
-       invisible.style.display = "initial"
+        resetColors(projectArray)
+        project.style.backgroundColor = "black"
+        const invisible = project.getElementsByClassName(`invisible`)[0]
+        invisible.style.display = "initial"
+        categoriesArray[index].style.color = "var(--main)"
     })
 })
 
