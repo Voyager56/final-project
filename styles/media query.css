@@ -32,7 +32,7 @@
         width: 90vw;
     }
     footer img{
-        height: 100%;
+        height: 100vh;
     }
     #form{
         justify-content: flex-end;
@@ -64,9 +64,6 @@
     .date{
         overflow: hidden;
     }
-    .contact-us{
-        display: none;
-    }
     .article-text{
         margin: 0;
     }
@@ -78,7 +75,7 @@
         width: 90vw;
     }
     #form{
-        justify-content: flex-end;
+        flex-wrap: wrap;
     }
 }
 
@@ -91,5 +88,8 @@
     }
     .article-text p{
         width: 98vw;
+    }
+    .date{
+        display: none;
     }
 }
