@@ -426,7 +426,8 @@ header{
 }
 
 footer{
-    position: relative;;
+    position: relative;
+    height: 100vh;
 }
 footer img{
     width: 100%;
