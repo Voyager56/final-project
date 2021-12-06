@@ -1,0 +1,28 @@
+@font-face{
+	font-family: 'Glacia Bold';
+	src: url('../fonts/GlacialIndifference-Bold.otf');
+}
+@font-face{
+	font-family: "Glacia Italic";
+	src: url('../fonts/GlacialIndifference-Italic.otf');
+}
+@font-face{
+	font-family: 'Glacia Regular';
+	src: url('../fonts/GlacialIndifference-Regular.otf');
+}
+@font-face{
+	font-family: 'Muli';
+	src: url('../fonts/Muli.ttf');
+}
+@font-face{
+	font-family: 'Muli Regular';
+	src: url('../fonts/Muli-Light.ttf');
+}
+@font-face{
+	font-family: 'Roboto Light';
+	src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face{
+	font-family: 'Roboto Regular';
+	src: url('../fonts/Roboto-Regular.ttf');
+}

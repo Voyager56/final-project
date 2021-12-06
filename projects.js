@@ -1,39 +1,60 @@
-;const projects = document.querySelector('.projects')
+const projects = document.querySelector('.projects')
 const categories = document.querySelector(`.categories`)
-
+const all = document.querySelector(`#all`)
 
 const projectArray = Array.from(projects.children)
 const categoriesArray = Array.from(categories.children)
 categoriesArray.shift()
-console.log(categoriesArray)
+console.log(all)
+
+all.addEventListener(`click`, (e) => {
+    resetColors(projectArray)
+    const invisible = Array.from(document.querySelectorAll(`.invisible`))
+    invisible.forEach(element => {
+        element.style.display = "initial"
+    })
+    all.style.color = "var(--main)"
+})
 
 categoriesArray.forEach((categorie,index) => {
     categorie.addEventListener(`click`, () => {
-        const project = document.querySelector(`[data-id = '${index}']`)
-        console.log(project)
+        resetColors(projectArray)
+        const project = document.querySelector(`[data-category = '${index}']`)
         project.style.backgroundColor = "black"
+        const invisible = project.getElementsByClassName(`invisible`)[0]
+        invisible.style.display = "initial"
+        categorie.style.color = "var(--main)"
     })
 
 })
-// projectArray.forEach((project,index) => {
-//     if(index % 2 == 0 ){
-//         project.style.backgroundColor = "#555555"
-//     }else{
-//         project.style.backgroundColor = "#848484"
-//     }
-//     project.addEventListener(`click`, (e) => {
-//         if(index % 2 == 0 ){
-//             project.style.backgroundColor = (project.style.backgroundColor = "#555555")? "black":"#555555";
-//         }else{
-//             project.style.backgroundColor = (project.style.backgroundColor = "#848484")? "black":"#848484";
-//         }
-//     })
-// })
-
-function resetColors(project){
-        if(index % 2 == 0 ){
+projectArray.forEach((project,index) => {
+    if(index % 2 == 0 ){
         project.style.backgroundColor = "#555555"
-        }else{
+    }else{
         project.style.backgroundColor = "#848484"
+    }
+    project.addEventListener(`click`, (e) => {
+       resetColors(projectArray)
+       project.style.backgroundColor = "black"
+       const invisible = project.getElementsByClassName(`invisible`)[0]
+       invisible.style.display = "initial"
+    })
+})
+
+function resetColors(projects){
+    projects.forEach((project,index)=> {
+        if(index % 2 == 0 ){
+            project.style.backgroundColor = "#555555"
+        }else{
+            project.style.backgroundColor = "#848484"
         }
+        const invisible = Array.from(document.querySelectorAll(`.invisible`))
+        invisible.forEach(element => {
+            element.style.display = "none"
+            })
+    })
+        categoriesArray.forEach(categorie => {
+            categorie.style.color = "white"
+        });
+        all.style.color = "white"
 }

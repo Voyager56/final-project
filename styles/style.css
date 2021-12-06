@@ -42,11 +42,19 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
 }
+.header-text h2{
+    font-family:  "Glacia Regular";
+}
+.header-text h1{
+    font-family: "Glacia Bold";
+}
+.header-text p{
+    font-family: "Glacia Regular";
+}
 .socials a{
     text-decoration: none;
     margin-left: 10px;
 }
-
 .about{
     display: flex;
     justify-content: center;
@@ -63,16 +71,21 @@ header{
 }
 .about-me p{
     max-width: fit-content;
+    font-family: "Muli Regular";
 }
-
+.abt-wrap{
+    font-family: "Glacia Bold";
+}
 .proffesion{
     color: #DAAE19;
+    font-family: "Muli";
 }
 .hire{
     background-color: var(--main);
     color: white;
     height: 2rem;
     border: none;
+    font-family: "Glacia Bold";
 }
 
 .progress-bar{
@@ -88,8 +101,12 @@ header{
 .bar-wrap{
     display: flex;
 }
+.bar-wrap h3{
+    font-family: "Glacia Bold";
+}
 .percentile{
     color: var(--main);
+    font-family: "Glacia Bold";
 }
 .progress{
     background-color: var(--main);
@@ -116,6 +133,7 @@ header{
  display: flex;   
  flex-direction: column;
  color: white;
+ font-family: "Glacia Bold";
 }
 .contact-wrap{
     width: 55px;
@@ -132,14 +150,14 @@ header{
     border: 2px solid #131A36;
 }
 .services{
-    position: relative;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px;
     display: grid;
     grid-template-columns: 280px 280px ;
     grid-gap: 10px;
 }
 .service{
+    position: relative;
     width: 280px;
     height: 360px;
     background-color: #FAFAFA;
@@ -153,12 +171,19 @@ header{
     justify-content: center;
     align-items: center;
 }
+.hover img{
+    width: 24px;
+    height: 24px;
+}
+.hover h3{
+    font-family: "Glacia Bold";
+}
 .services-text{
     position: absolute;
     visibility: hidden;
     color: white;
+    font-family: "Muli Regular";
 }
-
 .service:hover h3{
     color: white;
     position: absolute;
@@ -196,9 +221,11 @@ header{
 }
 .lorem{
     width: 380px;
+    color: white;
     text-align: right;
     display: flex;
     align-items: center;
+    font-family: 'Roboto Light';
 }
 .brown-dot{
     width: 140px;
@@ -223,10 +250,15 @@ header{
 }
 .designer{
     color: #E93656;
-
+    font-family: "Roboto Regular";
+}
+#square-2{
+    color: #E93656;
 }
 .name{
+    font-family: "Glacia Bold";
     margin-top:20px;
+    color: white;
 }
 .ident{
     height: 170px;
@@ -243,6 +275,7 @@ header{
     text-align: center;
     font-size: 70px;
     margin-top: 100px;
+    font-family: "Glacia Bold";
 }
 .categories{
     background-color: #15263E;
@@ -257,6 +290,7 @@ header{
 }
 .categories li{
     color: white;
+    font-family: "Glacia Bold";
 }
 .projects-wrap{
     margin-top: 50px;
@@ -269,10 +303,175 @@ header{
     grid-template-rows: 1fr 1fr;
 }
 
-.projects div{
+.projects-div {
     width: 300px;
     height: 350px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.visible{
+    font-family: "Glacia Bold";
+}
+.invisible{
+    margin-top: 20px;
+    display: initial;
+    color: white;
+}
+#all{
+    color: var(--main);
+}
+.invisible a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    font-family: "Muli";
+}
+.latest-articles{
+    margin-top: 100px;
+}
+.latest-articles h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: "Glacia Bold";
+}
+.article{
+    display: flex;
+}
+.article-text span{
+    font-family: "Muli";
+}
+.article-text{
+    margin: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-text h2{
+    font-family: "Glacia Bold";
+}
+.article-text p{
+    height: 140px;
+    width: 25rem;
+    margin-top: 20px;
+    font-family: "Muli";
+
+}
+.article-text span{
+    color: #888888;
+}
+.date{
+    background-color: #15263E;
+    height: 36.875rem;
+    width: 7.75rem;
+    font-size: 2rem;
+    color: var(--main);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blank{
+    width: 100%;
+    background-color: #E1E0DC;
+}
+.news-events{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-span{
+    color: #2ED279;
+    font-family: "Glacial Bold";
+}
+.news-wrap{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rosa{
+    font-family: "Glacia Bold";
+    font-size: 70px;
+}
+.card{
+    background-color: #15263E;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    border: 2px solid white;
+}
+.card-child{
+    text-align: center;
+    display: none;
+    font-family: "Glacia Bold";
+}
+.card:hover{
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 12px;
+}
+
+.card:hover .card-child{
+    display: initial;
+}
+
+footer{
+    position: relative;;
+}
+footer img{
+    width: 100%;
+    opacity: 0.5;
+    filter: invert(0%) sepia(2%) saturate(75%) hue-rotate(268deg) brightness(0.6) contrast(40%);
+}
+.contact-us{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    text-align: center;
+    font-family: "Roboto Light";
+    color: white;
+}
+
+#form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.personal-info{
+    display: flex;
+}
+.label-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin-right: 20px;
+    width: 10rem;
+    height: 2rem;
+}
+textarea{
+    margin-top: 20px;
+}
+#submit{
+    margin-top: 20px;
+    background: none;
+    padding: 20px 50px;
+    border: 1px solid #E93656;
+    color: #E93656;
+    font-family: "Glacia Bold";
 }

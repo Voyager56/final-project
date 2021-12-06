@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="voyager56.github.io/final-project/">
+	<meta property="og:type" content="Final Project" />
+	<meta property="og:title" content="Final Project"/>
+	<meta property="og:description" content="Final Project" />
+	<meta name="keywords" content="html,css,javascript" />
+	<meta name="author" content="Levan Miqatadze">
+	<meta name="description" content="Final Project" />
     <title>Final Project</title>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="slider.js" defer></script>
     <script src="sectionAnim.js" defer></script>
     <script src="projects.js" defer></script>
+    <script src="form.js" defer></script>
 </head>
 <body>
     <header>
@@ -127,9 +135,33 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea, doloremque officia voluptas veniam fuga quam quod in eaque eveniet, beatae quaerat ab similique! Laborum totam nam aliquid porro dolores.</p>
             </div>
         </div>
-        <div class="service"></div>
-        <div class="service"></div>
-        <div class="service"></div>
+        <div class="service">
+            <div class="hover">
+                <img src="images/services/el.svg" alt="bulb">
+                <h3>Design Analysis</h3>
+            </div>
+            <div class="services-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea, doloremque officia voluptas veniam fuga quam quod in eaque eveniet, beatae quaerat ab similique! Laborum totam nam aliquid porro dolores.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="hover">
+                <img src="images/services/chartr.svg" alt="chart">
+                <h3>Unique Ideas</h3>
+            </div>
+            <div class="services-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea, doloremque officia voluptas veniam fuga quam quod in eaque eveniet, beatae quaerat ab similique! Laborum totam nam aliquid porro dolores.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="hover">
+                <img src="images/services/key.svg" alt="k">
+                <h3>Fully Managed</h3>
+            </div>
+            <div class="services-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea, doloremque officia voluptas veniam fuga quam quod in eaque eveniet, beatae quaerat ab similique! Laborum totam nam aliquid porro dolores.</p>
+            </div>
+        </div>
     </section>
     <section class="recomendations">
         <img id="recom-back" src="images/recomendations/countdown-bg.png" alt="recom-background">
@@ -146,7 +178,7 @@
             </div>
             <div class="squares">
                 <div class="square">▢</div>
-                <div class="square">▢</div>
+                <div id="square-2" class="square">▢</div>
                 <div class="square">▢</div>
             </div>
         </div>
@@ -155,23 +187,125 @@
         <h1 class="latest">Latest Projects</h1>
         <div class="projects-wrap">
             <ul class="categories">
-                <li class="all">All</li>
-                <li class="work-ideas">Work ideas</li>
-                <li>Mockup</li>
-                <li>PSD Design</li>
-                <li>Logo</li>
-                <li>Presentation</li>
-                <li>Icons</li>
+                <li id="all">All</li>
+                <li>Game of life</li>
+                <li>Midterm</li>
+                <li>Differential Graphing</li>
+                <li>Quick sort</li>
+                <li>Bubble sort</li>
+                <li>Hangman game(c++)</li>
             </ul>
             <div class="projects">
-                <div data-id="0">1</div>
-                <div data-id="1">2</div>
-                <div data-id="2">3</div>
-                <div data-id="3">4</div>
-                <div data-id="4">5</div>
-                <div data-id="5">6</div>
+                <div class="projects-div" data-category="0">
+                    <div class="invisible">
+                        <p class="visible">Conway's game of life</p>
+                        <a href="https://github.com/Voyager56/game-of-life-vanila">Github Link</a>
+                    </div>
+                </div>
+                <div class="projects-div" class="projects-div" data-category="1">
+                    <div class="invisible">
+                        <p class="visible">Midterm</p>
+                        <a href="https://github.com/Voyager56/midterm">Github Link</a>
+                    </div>
+                </div>
+                <div class="projects-div" data-category="2">
+                    <div class="invisible">
+                        <p class="visible">Differential graph calculator</p>
+                        <a href="https://github.com/Voyager56/differentiation-calculator">Github Link</a>
+                    </div>
+                </div>
+                <div class="projects-div" data-category="3">
+                    <div class="invisible">
+                        <p class="visible">Quick sort visualizer</p>
+                        <a  href="https://github.com/Voyager56/quick-sort">Github Link</a>
+                    </div>
+                </div>
+                <div class="projects-div" data-category="4">
+                    <div class="invisible">
+                        <p class="visible">Bubble sort visualizer</p>
+                        <a href="https://github.com/Voyager56/bubble">Github Link</a>
+                    </div>
+                </div>
+                <div class="projects-div" data-category="5">
+                    <div class="invisible">
+                        <p class="visible">Hangman in c++</p>
+                        <a  href="https://github.com/Voyager56/hangman">Github Link</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <section class="latest-articles">
+        <h1>Latest Articles</h1>
+        <div class="article">
+            <div class="article-text">
+                <span>IN FREELANCING COMPANY</span>
+                <h2>Graphic Designer</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+            </div>
+            <div class="date">2011 - 2012</div>
+            <div class="blank"></div>
+        </div>
+        <div class="article">
+            <div class="blank"></div>
+            <div class="date">2013 - 2014</div>
+            <div class="article-text">
+                <span>IN FREELANCING COMPANY</span>
+                <h2>Personal Adviser</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-text">
+                <span>IN FREELANCING COMPANY</span>
+                <h2>Application Design</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. READ MORE</p>
+            </div>
+            <div class="date">2015 - 2016</div>
+            <div class="blank"></div>
+        </div>
+    </section>
+    <section class="news-events">
+        <span class="news-span">NEWS & EVENT</span>
+        <h1 class="rosa">Rosa Team</h1>
+        <div class="news-wrap">
+            <div class="card">
+                <h4 class="card-child">Client 1</h4>
+                <span class="card-child">Lorm ipm dolr amt consect mag maiores.Ipsa dolor sit magnam maores.</span>
+            </div>
+            <div class="card">
+                <h4 class="card-child">Client 2</h4>
+                <span class="card-child">Lorm ipm dolr amt consect mag maiores.Ipsa dolor sit magnam maores.</span>
+            </div>
+            <div class="card">
+                <h4 class="card-child">Client 3</h4>
+                <span class="card-child">Lorm ipm dolr amt consect mag maiores.Ipsa dolor sit magnam maores.</span>
+            </div>
+            <div class="card">
+                <h4 class="card-child">Client 4</h4>
+                <span class="card-child">Lorm ipm dolr amt consect mag maiores.Ipsa dolor sit magnam maores.</span>
+            </div>
+            <div class="card">
+                <h4 class="card-child">Client 5</h4>
+                <span class="card-child">Lorm ipm dolr amt consect mag maiores.Ipsa dolor sit magnam maores.</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="images/footer/map.png" alt="map">
+        <div class="contact-us">
+            <h1>Contact Us!</h1>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+        </div>
+            <form id="form">
+                <div class="personal-info">
+                        <input placeholder="Your Name*" name="name" type="text">
+                        <input placeholder="Your Email*" name="email" type="text">
+                        <input placeholder="Your Website*" name="website" type="text">
+                </div>
+                <textarea  placeholder="Enter your message*"  name="message" id="message" cols="100" rows="10"></textarea>
+                <button id="submit" type="submit">Send</button>
+            </form>
+    </footer>
 </body>
 </html>
