@@ -1,0 +1,95 @@
+@media only screen and (max-width:1200px) {
+    .categories{
+        display: none;
+    }
+    .about-me{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .hire{
+        background-color: var(--main);
+        color: white;
+        width: 5rem;
+        text-align: center;
+        border: none;
+        font-family: "Glacia Bold";
+        margin: 2rem;
+    }
+    .projects-div{
+        width: 32.9vw;
+    }
+    #contact-wrap{
+        display: none;
+    }
+    .blank{
+        display: none;
+    }
+    textarea{
+        width: 90vw;
+    }
+    footer img{
+        height: 100%;
+    }
+    #form{
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .about{
+        margin-bottom: 8rem;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .recom-wrap{
+        flex-wrap: wrap;
+    }
+    .dot-wrap{
+        display: none;
+    }
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .date{
+        overflow: hidden;
+    }
+    .contact-us{
+        display: none;
+    }
+    .article-text{
+        margin: 0;
+    }
+    .personal-info{
+        margin-left: 50px;
+        flex-wrap: wrap;
+    }
+    textarea{
+        width: 90vw;
+    }
+    #form{
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .about{
+        margin-bottom: 20rem;
+    }
+    .article{
+       height: 20rem;
+    }
+    .article-text p{
+        width: 98vw;
+    }
+}

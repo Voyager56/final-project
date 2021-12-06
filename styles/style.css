@@ -135,7 +135,7 @@ header{
  color: white;
  font-family: "Glacia Bold";
 }
-.contact-wrap{
+#contact-wrap{
     width: 55px;
     height: 55px;
     border: 2px dotted white;
@@ -145,7 +145,7 @@ header{
     justify-content: center;
 }
 
-.contact-wrap:hover{
+#contact-wrap:hover{
     background-color: #E93656;
     border: 2px solid #131A36;
 }
@@ -313,6 +313,7 @@ header{
 }
 .visible{
     font-family: "Glacia Bold";
+    text-align: center;
 }
 .invisible{
     margin-top: 20px;
@@ -435,7 +436,7 @@ footer img{
 .contact-us{
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 1rem;
     text-align: center;
     font-family: "Roboto Light";
     color: white;
@@ -468,7 +469,7 @@ textarea{
     margin-top: 20px;
 }
 #submit{
-    margin-top: 20px;
+    margin: 20px;
     background: none;
     padding: 20px 50px;
     border: 1px solid #E93656;
