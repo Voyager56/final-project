@@ -53,8 +53,10 @@ const formValidator = (form, fieldsConfig, onValidateSuccess, onValidationError)
         });
         if (errors.length === 0) {
           onValidateSuccess(values);
+          openModal();
         } else {
           onValidationError(errors);
+          openModal(errors,'red');
         }
       });
     }
@@ -89,8 +91,27 @@ const formValidator = (form, fieldsConfig, onValidateSuccess, onValidationError)
     },
   ];
   
-  const form = document.querySelector(`#form`)
-  
+  const form = document.querySelector(`#form`);
+  const modal = document.getElementById("myModal");
+  const closebtn = document.getElementsByClassName("close")[0];
+  const modalContent = document.getElementsByClassName("modal-text")[0];
+
+
+  closebtn.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  function openModal(text,color = "green") {
+    if(text) modalContent.innerText = text + "\n";
+    modalContent.style.color = color;
+    modal.style.display = "block";
+  }
+
+
   const onFormSubmitSuccess = (fields) => {
       sendData(fields)
     console.log(fields)
@@ -98,7 +119,6 @@ const formValidator = (form, fieldsConfig, onValidateSuccess, onValidationError)
   const onFormSubmitError = (fields) => {
     console.log('Error', fields);
   }
-  
   
   const formManager = formValidator(form, fieldsConfig, onFormSubmitSuccess, onFormSubmitError);
 
